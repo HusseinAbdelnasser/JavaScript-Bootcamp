@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        height: 4000px;
+      }
+      .assign {
+        text-align: center;
+        padding-top: 20px;
+      }
+      .assign input {
+        padding: 10px;
+        width: 300px;
+        border: 1px solid #ddd;
+      }
+      .assign input:focus {
+        outline: none;
+        border-color: #ccc;
+      }
+      .assign [title="Current"] {
+        padding: 20px;
+        margin: 10px auto;
+        width: 610px;
+        background-color: #f1f0f0;
+      }
+      .assign .classes-list {
+        padding: 20px;
+        margin: 10px auto;
+        width: 610px;
+        background-color: #f1f0f0;
+      }
+      .assign .classes-list h5 {
+        margin: 0 0 10px;
+        text-align: left;
+      }
+      .assign .classes-list div  {
+        background-color: #ff5722;
+        padding: 6px 10px 8px;
+        margin-right: 5px;
+        border-radius: 6px;
+        color: white;
+        display: inline-flex;
+      }
+
+      ul {
+        padding: 0;
+        margin: 0;
+        background-color: #ddd;
+        margin: 20px auto;
+        padding: 20px;
+        width: 400px;
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+      }
+      ul li {
+        width: 60px;
+        height: 60px;
+        border: 2px solid transparent;
+        opacity: 0.4;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+      ul li.active,
+      ul li:hover {
+        opacity: 1;
+      }
+      ul li:first-child {
+        background-color: red;
+      }
+      ul li:nth-child(2) {
+        background-color: green;
+      }
+      ul li:nth-child(3) {
+        background-color: blue;
+      }
+      ul li:nth-child(4) {
+        background-color: black;
+      }
+      .experiment {
+        background-color: red;
+        width: 600px;
+        height: 300px;
+        margin: 20px auto;
+      }
+    </style>
+</head>
+<body>
+  
+    <div class="js"><span>main.js</span></div>
+    <img src="" alt="">
+    <a class="link" href="#">google</a>
+    <p class="para" title="Paragraph" data-src="Testing">Paragraph</p>
+
+    <div class="childern"><!-- Osama -->Hello Div<p>Hello P</p><span>Hello Span</span><!-- Comment -->Hello</div>
+
+    <button id="btn">button</button>
+
+
+    <form action="">
+      <input type="text" name="username" placeholder="Max 10 Chars Only">
+      <input type="text" name="age" placeholder="Can't Be Empty">
+      <input type="submit" value="Submit Data">
+    </form>
+
+    <div id="my-div">
+      <img decoding="async" src="" alt="" />
+    </div>
+
+
+    <form action="">
+      <input type="number" name="dollar" placeholder="USD Dollar" />
+      <div class="result"> </div>
+    </form>
+
+    <div class="one" title="two">Two</div>
+    <div class="two" title="one">One</div>
+
+    <img decoding="async" src="#" title="One">
+
+
+    <form action="">
+      <input type="number" name="elements" class="input" placeholder="Number Of Elements" />
+      <input type="text" name="texts" class="input" placeholder="Elements Text" />
+      <select name="type" class="input">
+        <option value="Div">Div</option>
+        <option value="Section">Section</option>
+      </select>
+      <input type="submit" name="create" value="Create" />
+      <div class="results"></div>
+    </form>
+
+    <a class="open" href="https://google.com">Google</a>
+    <a class="open" href="https://elzero.org">Elzero</a>
+    <a class="not" href="https://facebook.com">Facebook</a>
+    <a class="linked" href="https://linkedin.com">Elzero</a>
+
+
+    <div class="our-element">Our Element</div>
+    <p id="par">Paragraph</p>
+
+    <div id="nodes">
+      <span>Hello</span>
+      <!-- We Need The Next Text Without Spaces -->
+      Elzero
+    </div>
+
+    <ul>
+      <li class="active" data-color="red"></li>
+      <li data-color="green"></li>
+      <li data-color="blue"></li>
+      <li data-color="black"></li>
+    </ul>
+    <div class="experiment"></div>
+
+
+    <form id="register" action="" method="get">
+      <input type="text" id="phone" name="the-phone" maxlength="15" />
+      <input type="submit" value="Register" />
+    </form>
+  
+    <!--
+      <div class="assign">
+        <input type="text" class="classes-to-add" placeholder="Add Classes" />
+        <input type="text" class="classes-to-remove" placeholder="Remove Classes" />
+        <div class="element current" title="Current">Current Element</div>
+        <div class="classes-list">
+          <h5>Current Element Class Lists</h5>
+          <div class="class-place"></div>
+        </div>
+      </div>
+    -->
+
+    <p class="test">test</p>
+  <script src="main.js" type="module"></script>
+  <script src="app.js"type="module" ></script>
+</body>
+</html>
